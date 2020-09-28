@@ -6,7 +6,7 @@ namespace AgeTranslator
     {
         static void Main(string[] args)
         {
-            Welcome.Welkom();
+            Welcome.welkom();
         }
     }
 }
