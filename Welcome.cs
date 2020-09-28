@@ -6,7 +6,7 @@ namespace AgeTranslator
 {
     class Welcome
     {
-        static void welkom(){
+        public static void welkom(){
             Console.WriteLine("Welkom bij de AgeTranslator!");
         }
     }
