@@ -17,7 +17,7 @@ namespace AgeTranslator
             maand = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Op welke dag ben je geboren?");
             dag = Convert.ToInt32(Console.ReadLine());
-            AgeCalculation.berekening(dag, maand, jaar);
+            Output.giveOutput(AgeCalculation.berekening(dag, maand, jaar));
         }
     }
 }
