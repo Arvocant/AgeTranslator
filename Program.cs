@@ -7,6 +7,7 @@ namespace AgeTranslator
         static void Main(string[] args)
         {
             Welcome.welkom();
+            AgeCalculation.berekening();
         }
     }
 }

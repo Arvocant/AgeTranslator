@@ -6,11 +6,14 @@ namespace AgeTranslator
 {
     class AgeCalculation
     {
-
-        static public void berekening(int Dag, int Maand, int Jaar)
+        static public TimeSpan berekening(int Dag, int Maand, int Jaar)
         {
-            DateTime huidigetijd = new DateTime(Jaar, Maand, Dag);
-            
+            DateTime geboorte = new DateTime(Jaar, Maand, Dag);
+            DateTime huidigetijd = DateTime.Now;
+            TimeSpan leeftijd = huidigetijd - geboorte;
+            //int leeftijd = geboorte.Year - huidigetijd.Year;
+
+            return leeftijd;
         }
     }
 }
